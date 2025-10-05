@@ -1,0 +1,16 @@
+services:
+  qrkit:
+    build: ./app
+    container_name: qrkit
+    ports:
+      - "8080:8080"
+    environment:
+      BASE_URL: "https://www.rpd.ae"            # your subdomain or http://localhost:8080 for testing
+      LEAD_WEBHOOK_URL: ""                       # paste your n8n webhook URL later
+      COMPANY_NAME: "Royal Phoenix Drones"
+      WHATSAPP_NUMBER: "+971500000000"
+      CONTACT_NAME: "Suhail Dheen"
+      CONTACT_EMAIL: "hello@rpd.ae"
+      CONTACT_PHONE: "+971500000000"
+      CONTACT_TITLE: "Founder & CEO"
+      CONTACT_ORG: "Royal Phoenix Drone Services LLC"
